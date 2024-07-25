@@ -1,0 +1,209 @@
+.tutustuKokoTarinaamme {
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.button {
+  position: absolute;
+  top: 2732px;
+  left: 160px;
+  border-radius: 112px;
+  background-color: #1c2239;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 32px;
+}
+.solarlinkCircleBoldIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.devlinksIcon {
+  position: absolute;
+  top: 6.25px;
+  left: 47.5px;
+  width: 135px;
+  height: 26.3px;
+}
+.solarlinkCircleBoldParent {
+  width: 182.5px;
+  position: relative;
+  height: 40px;
+}
+.addYourDetails,
+.login {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.addYourDetails {
+  font-size: var(--heading-s-size);
+  color: var(--grey);
+}
+.loginParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.emailAddress {
+  width: 396px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.phenvelopeSimpleFillIcon {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.egAlexemailcom {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  opacity: 0.5;
+}
+.frameChild {
+  width: 12px;
+  position: relative;
+  height: 6px;
+  display: none;
+}
+.phenvelopeSimpleFillParent {
+  width: 396px;
+  border-radius: var(--br-5xs);
+  background-color: var(--white);
+  border: 1px solid var(--borders);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-base);
+  gap: var(--gap-xs);
+  font-size: var(--heading-s-size);
+}
+.emailAddressParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.enterYourPassword {
+  position: relative;
+  line-height: 150%;
+  opacity: 0.5;
+}
+.phlockKeyFillParent {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--white);
+  border: 1px solid var(--borders);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-base);
+  gap: var(--gap-xs);
+  font-size: var(--heading-s-size);
+}
+.login1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 150%;
+  font-weight: 600;
+}
+.loginWrapper {
+  width: 43px;
+  position: relative;
+  height: 24px;
+}
+.publish {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 27px;
+  font-size: var(--heading-s-size);
+  color: var(--white);
+}
+.createAccountLink {
+  color: var(--purple);
+}
+.dontHaveAnContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--heading-s-size);
+  line-height: 150%;
+  text-align: center;
+  color: var(--grey);
+}
+.frameGroup,
+.frameParent {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: var(--body-s-size);
+}
+.frameParent {
+  overflow: hidden;
+  padding: 40px;
+  gap: 40px;
+}
+.frameParent,
+.frameWrapper,
+.groupParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  width: 476px;
+  border-radius: 12px;
+  background-color: var(--white);
+  overflow: hidden;
+  align-items: flex-start;
+}
+.groupParent {
+  position: absolute;
+  top: calc(50% - 286px);
+  left: calc(50% - 238px);
+  align-items: center;
+  gap: 51px;
+  font-size: var(--heading-m-size);
+  color: var(--dark-grey);
+  font-family: var(--heading-s);
+}
+.desktopLogin {
+  width: 100%;
+  position: relative;
+  background-color: var(--light-grey);
+  height: 984px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  color: var(--white);
+  font-family: var(--font-gotham-bold);
+}
