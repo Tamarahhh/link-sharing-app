@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Empty.module.css";
+import Image from "next/image";
 
 const Empty: NextPage = () => {
   const router = useRouter();
@@ -17,12 +18,12 @@ const Empty: NextPage = () => {
         <div className={styles.frameWrapper}>
           <div className={styles.groupParent}>
             <div className={styles.solarlinkCircleBoldParent}>
-              <img
+              <Image
                 className={styles.solarlinkCircleBoldIcon}
                 alt=""
                 src="/images/solar_link-circle-bold.png"
               />
-              <img
+              <Image
                 className={styles.devlinksIcon}
                 alt=""
                 src="/images/devlinks.png"
@@ -30,7 +31,7 @@ const Empty: NextPage = () => {
             </div>
             <div className={styles.linksParent}>
               <div className={styles.links}>
-                <img
+                <Image
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/images/ph_link-bold.png"
@@ -38,7 +39,7 @@ const Empty: NextPage = () => {
                 <div className={styles.linkText}>Links</div>
               </div>
               <div className={styles.profileDetails} onClick={handleProfile}>
-                <img
+                <Image
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/images/ph_user-circle-bold.png"
@@ -52,7 +53,7 @@ const Empty: NextPage = () => {
               <div className={styles.previewWrapper}>
                 <div className={styles.preview} onClick={handlePreview}>
                   <span className={styles.text}>Preview</span>
-                  <img
+                  <Image
                     className={styles.phpreviewBoldIcon}
                     alt=""
                     src="/images/ph_eye-bold.png"
@@ -66,12 +67,12 @@ const Empty: NextPage = () => {
       <div className={styles.frameParent}>
         <div className={styles.previewSectionWrapper}>
           <div className={styles.previewSection}>
-            <img
+            <Image
               className={styles.previewSectionChild}
               alt=""
               src="/rectangle-15.svg"
             />
-            <img className={styles.subtractIcon} alt="" src="/subtract.svg" />
+            <Image className={styles.subtractIcon} alt="" src="/subtract.svg" />
             <div className={styles.frameGroup}>
               <div className={styles.ellipseParent}>
                 <div className={styles.frameChild} />
@@ -109,7 +110,7 @@ const Empty: NextPage = () => {
               </div>
               <div className={styles.frameWrapper1}>
                 <div className={styles.groupContainer}>
-                  <img
+                  <Image
                     className={styles.groupIcon}
                     alt=""
                     src="/images/group-273.png"

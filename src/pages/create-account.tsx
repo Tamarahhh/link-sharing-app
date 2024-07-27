@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Create.module.css";
+import Image from "next/image";
 
 const CreateAccount: NextPage = () => {
   const router = useRouter();
@@ -25,12 +26,12 @@ const CreateAccount: NextPage = () => {
     <div className={styles.CreateAccount}>
       <div className={styles.groupParent}>
         <div className={styles.solarlinkCircleBoldParent}>
-          <img
+          <Image
             className={styles.solarlinkCircleBoldIcon}
             alt="Solarlink Circle Bold"
             src="/images/solar_link-circle-bold.png"
           />
-          <img
+          <Image
             className={styles.devlinksIcon}
             alt="Devlinks"
             src="/images/devlinks.png"
@@ -50,7 +51,7 @@ const CreateAccount: NextPage = () => {
                   Email address
                 </label>
                 <div className={styles.phenvelopeSimpleFillParent}>
-                  <img
+                  <Image
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Envelope Icon"
                     src="/images/ph_envelope-simple-fill.svg"
@@ -70,7 +71,7 @@ const CreateAccount: NextPage = () => {
                   Create password
                 </label>
                 <div className={styles.phlockKeyFillParent}>
-                  <img
+                  <Image
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Lock Icon"
                     src="/images/ph_lock-key-fill.svg"
@@ -93,7 +94,7 @@ const CreateAccount: NextPage = () => {
                   Confirm password
                 </label>
                 <div className={styles.phlockKeyFillParent}>
-                  <img
+                  <Image
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Lock Icon"
                     src="/images/ph_lock-key-fill.svg"

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Preview.module.css";
+import Image from "next/image";
 
 const Preview: NextPage = () => {
   const router = useRouter();
@@ -33,7 +34,7 @@ const Preview: NextPage = () => {
       <div className={styles.PreviewInner}>
         <div className={styles.frameParent}>
           <div className={styles.ellipseParent}>
-            <img
+            <Image
               className={styles.frameChild}
               alt=""
               src="/images/Ellipse-3.png"
@@ -45,39 +46,39 @@ const Preview: NextPage = () => {
           </div>
           <div className={styles.publishParent}>
             <div className={styles.publish}>
-              <img
+              <Image
                 className={styles.teenyiconsgithubSolid}
                 alt=""
                 src="/images/teenyicons_github-solid.png"
               />
               <div className={styles.github}>GitHub</div>
-              <img
+              <Image
                 className={styles.mdiarrowRightIcon}
                 alt=""
                 src="/images/mdi_arrow-right.png"
               />
             </div>
             <div className={styles.publish1}>
-              <img
+              <Image
                 className={styles.teenyiconsgithubSolid}
                 alt=""
                 src="/images/ri_youtube-fill.png"
               />
               <div className={styles.github}>YouTube</div>
-              <img
+              <Image
                 className={styles.mdiarrowRightIcon}
                 alt=""
                 src="/images/mdi_arrow-right.png"
               />
             </div>
             <div className={styles.publish2}>
-              <img
+              <Image
                 className={styles.teenyiconsgithubSolid}
                 alt=""
                 src="/images/mdi_linkedin.png"
               />
               <div className={styles.github}>LinkedIn</div>
-              <img
+              <Image
                 className={styles.mdiarrowRightIcon}
                 alt=""
                 src="/images/mdi_arrow-right.png"

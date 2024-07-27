@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import styles from "../styles/Profile.module.css";
+import Image from "next/image";
 
 const Profile: NextPage = () => {
   const router = useRouter();
@@ -16,12 +17,12 @@ const Profile: NextPage = () => {
         <div className={styles.frameWrapper}>
           <div className={styles.groupParent}>
             <div className={styles.solarlinkCircleBoldParent}>
-              <img
+              <Image
                 className={styles.solarlinkCircleBoldIcon}
                 alt=""
                 src="/images/solar_link-circle-bold.png"
               />
-              <img
+              <Image
                 className={styles.devlinksIcon}
                 alt=""
                 src="/images/devlinks.png"
@@ -29,7 +30,7 @@ const Profile: NextPage = () => {
             </div>
             <div className={styles.profileDetailsParent}>
               <div className={styles.profileDetails}>
-                <img
+                <Image
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/images/ph_link-bold.png"
@@ -39,7 +40,7 @@ const Profile: NextPage = () => {
                 </div>
               </div>
               <div className={styles.links1}>
-                <img
+                <Image
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/images/ph_user-circle-bold.png"
@@ -51,7 +52,7 @@ const Profile: NextPage = () => {
               <div className={styles.previewWrapper}>
                 <div className={styles.previewLink} onClick={handlePreview}>
                   <span className={styles.text}>Preview</span>
-                  <img
+                  <Image
                     className={styles.phpreviewBoldIcon}
                     alt=""
                     src="/images/ph_eye-bold.png"
@@ -65,12 +66,12 @@ const Profile: NextPage = () => {
       <div className={styles.frameParent}>
         <div className={styles.previewSectionWrapper}>
           <div className={styles.previewSection}>
-            <img
+            <Image
               className={styles.previewSectionChild}
               alt=""
               src="/rectangle-15.svg"
             />
-            <img className={styles.subtractIcon} alt="" src="/subtract.svg" />
+            <Image className={styles.subtractIcon} alt="" src="/subtract.svg" />
             <div className={styles.frameGroup}>
               <div className={styles.ellipseParent}>
                 <div className={styles.frameChild} />
@@ -81,39 +82,39 @@ const Profile: NextPage = () => {
               </div>
               <div className={styles.publishParent}>
                 <div className={styles.publish1}>
-                  <img
+                  <Image
                     className={styles.teenyiconsgithubSolid}
                     alt=""
                     src="/images/teenyicons_github-solid.png"
                   />
                   <div className={styles.github}>GitHub</div>
-                  <img
+                  <Image
                     className={styles.teenyiconsgithubSolid}
                     alt=""
                     src="/images/mdi_arrow-right.png"
                   />
                 </div>
                 <div className={styles.publish2}>
-                  <img
+                  <Image
                     className={styles.teenyiconsgithubSolid}
                     alt=""
                     src="/images/ri_youtube-fill.png"
                   />
                   <div className={styles.github}>YouTube</div>
-                  <img
+                  <Image
                     className={styles.teenyiconsgithubSolid}
                     alt=""
                     src="/images/mdi_arrow-right.png"
                   />
                 </div>
                 <div className={styles.publish3}>
-                  <img
+                  <Image
                     className={styles.teenyiconsgithubSolid}
                     alt=""
                     src="/images/mdi_linkedin.png"
                   />
                   <div className={styles.github}>LinkedIn</div>
-                  <img
+                  <Image
                     className={styles.teenyiconsgithubSolid}
                     alt=""
                     src="/images/mdi_arrow-right.png"
@@ -138,7 +139,7 @@ const Profile: NextPage = () => {
                   <div className={styles.frameParent2}>
                     <div className={styles.frameWrapper2}>
                       <div className={styles.phimageParent}>
-                        <img
+                        <Image
                           className={styles.phimageIcon}
                           alt=""
                           src="/images/ph_image.png"
@@ -148,7 +149,7 @@ const Profile: NextPage = () => {
                     </div>
                     <div className={styles.frameWrapper3}>
                       <div className={styles.phimageGroup}>
-                        <img
+                        <Image
                           className={styles.phimageIcon}
                           alt=""
                           src="/images/ph_image.png"

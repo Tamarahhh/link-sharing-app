@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/Index.module.css";
+import Image from "next/image";
 
 const Login: NextPage = () => {
   const router = useRouter();
@@ -26,12 +27,12 @@ const Login: NextPage = () => {
     <div className={styles.desktopLogin}>
       <div className={styles.groupParent}>
         <div className={styles.solarlinkCircleBoldParent}>
-          <img
+          <Image
             className={styles.solarlinkCircleBoldIcon}
             alt="Solarlink Circle Bold"
             src="/images/solar_link-circle-bold.png"
           />
-          <img
+          <Image
             className={styles.devlinksIcon}
             alt="Devlinks"
             src="/images/devlinks.png"
@@ -51,7 +52,7 @@ const Login: NextPage = () => {
                   Email address
                 </label>
                 <div className={styles.phenvelopeSimpleFillParent}>
-                  <img
+                  <Image
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Envelope Icon"
                     src="/images/ph_envelope-simple-fill.svg"
@@ -64,7 +65,7 @@ const Login: NextPage = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  <img
+                  <Image
                     className={styles.frameChild}
                     alt=""
                     src="/images/vector-1.svg"
@@ -76,7 +77,7 @@ const Login: NextPage = () => {
                   Password
                 </label>
                 <div className={styles.phlockKeyFillParent}>
-                  <img
+                  <Image
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Lock Icon"
                     src="/images/ph_lock-key-fill.svg"

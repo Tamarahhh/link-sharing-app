@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import styles from "../styles/AddedLink.module.css";
+import Image from "next/image";
 
 const AddedLink: NextPage<{
   links: { platform: string; url: string }[];
@@ -10,16 +11,20 @@ const AddedLink: NextPage<{
         <div className={styles.frameWrapper}>
           <div className={styles.groupParent}>
             <div className={styles.solarlinkCircleBoldParent}>
-              <img
+              <Image
                 className={styles.solarlinkCircleBoldIcon}
                 alt=""
                 src="/images/solar_link-circle-bold.png"
               />
-              <img className={styles.devlinksIcon} alt="" src="/devlinks.svg" />
+              <Image
+                className={styles.devlinksIcon}
+                alt=""
+                src="/devlinks.svg"
+              />
             </div>
             <div className={styles.linksParent}>
               <div className={styles.links}>
-                <img
+                <Image
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/images/ph_link-bold.png"
@@ -27,7 +32,7 @@ const AddedLink: NextPage<{
                 <div className={styles.links1}>Links</div>
               </div>
               <div className={styles.profileDetails}>
-                <img
+                <Image
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/phusercirclebold.svg"
@@ -46,12 +51,12 @@ const AddedLink: NextPage<{
       <div className={styles.frameParent}>
         <div className={styles.previewSectionWrapper}>
           <div className={styles.previewSection}>
-            <img
+            <Image
               className={styles.previewSectionChild}
               alt=""
               src="/rectangle-15.svg"
             />
-            <img className={styles.subtractIcon} alt="" src="/subtract.svg" />
+            <Image className={styles.subtractIcon} alt="" src="/subtract.svg" />
             <div className={styles.frameGroup}>
               <div className={styles.ellipseParent}>
                 <div className={styles.frameChild} />
@@ -64,13 +69,13 @@ const AddedLink: NextPage<{
                 {links.map((link, index) => (
                   <div key={index}>
                     <div className={styles.publish1}>
-                      <img
+                      <Image
                         className={styles.teenyiconsgithubSolid}
                         alt=""
                         src={`/teenyicons${link.platform}solid.svg`}
                       />
                       <div className={styles.github}>{link.platform}</div>
-                      <img
+                      <Image
                         className={styles.teenyiconsgithubSolid}
                         alt=""
                         src="/mdiarrowright.svg"
@@ -114,20 +119,20 @@ const AddedLink: NextPage<{
                     <div className={styles.remove}>Remove</div>
                   </div>
                   <div className={styles.teenyiconsgithubSolidParent}>
-                    <img
+                    <Image
                       className={styles.teenyiconsgithubSolid}
                       alt=""
                       src={`/teenyicons${link.platform}solid.svg`}
                     />
                     <div className={styles.github}>{link.platform}</div>
-                    <img
+                    <Image
                       className={styles.vectorIcon}
                       alt=""
                       src="/vector-1.svg"
                     />
                   </div>
                   <div className={styles.teenyiconsgithubSolidParent}>
-                    <img
+                    <Image
                       className={styles.teenyiconsgithubSolid}
                       alt=""
                       src="/ph_link-bold.png"
@@ -144,13 +149,13 @@ const AddedLink: NextPage<{
                   <div className={styles.platformParent}>
                     <div className={styles.platform}>Platform</div>
                     <div className={styles.teenyiconsgithubSolidGroup}>
-                      <img
+                      <Image
                         className={styles.teenyiconsgithubSolid}
                         alt=""
                         src={`/teenyicons${link.platform}solid.svg`}
                       />
                       <div className={styles.github}>{link.platform}</div>
-                      <img
+                      <Image
                         className={styles.vectorIcon}
                         alt=""
                         src="/vector-11.svg"
@@ -160,7 +165,7 @@ const AddedLink: NextPage<{
                   <div className={styles.platformParent}>
                     <div className={styles.platform}>Link</div>
                     <div className={styles.teenyiconsgithubSolidGroup}>
-                      <img
+                      <Image
                         className={styles.teenyiconsgithubSolid}
                         alt=""
                         src="/phlinkbold2.svg"
