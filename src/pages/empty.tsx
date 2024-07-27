@@ -35,23 +35,28 @@ const Empty: NextPage = () => {
                   alt=""
                   src="/images/ph_link-bold.png"
                 />
-                <div className={styles.links1}>Links</div>
+                <div className={styles.linkText}>Links</div>
               </div>
-              <div className={styles.profileDetails}>
+              <div className={styles.profileDetails} onClick={handleProfile}>
                 <img
                   className={styles.phlinkBoldIcon}
                   alt=""
                   src="/images/ph_user-circle-bold.png"
                 />
-                <div className={styles.links1} onClick={handleProfile}>
-                  Profile Details
+                <div className={styles.links1}>
+                  <span className={styles.profileText}>Profile Details</span>
                 </div>
               </div>
             </div>
             <div className={styles.publish}>
               <div className={styles.previewWrapper}>
                 <div className={styles.preview} onClick={handlePreview}>
-                  Preview
+                  <span className={styles.text}>Preview</span>
+                  <img
+                    className={styles.phpreviewBoldIcon}
+                    alt=""
+                    src="/images/ph_eye-bold.png"
+                  />
                 </div>
               </div>
             </div>
@@ -131,11 +136,6 @@ const Empty: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={styles.button}>
-        <div className={styles.tutustuKokoTarinaamme}>
-          tutustu koko tarinaamme
         </div>
       </div>
     </div>

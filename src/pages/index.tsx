@@ -1,18 +1,20 @@
 import { NextPage } from "next";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import styles from "../styles/index.module.css";
+import styles from "../styles/Index.module.css";
 
 const Login: NextPage = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [hasError, setHasError] = useState(false);
 
   const handleLogin = async () => {
     if (email && password) {
+      setHasError(false);
       router.push("/empty");
     } else {
-      alert("Please enter email and password");
+      setHasError(true);
     }
   };
 
@@ -22,11 +24,6 @@ const Login: NextPage = () => {
 
   return (
     <div className={styles.desktopLogin}>
-      <div className={styles.button}>
-        <div className={styles.tutustuKokoTarinaamme}>
-          tutustu koko tarinaamme
-        </div>
-      </div>
       <div className={styles.groupParent}>
         <div className={styles.solarlinkCircleBoldParent}>
           <img

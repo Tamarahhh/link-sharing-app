@@ -1,9 +1,3 @@
-.tutustuKokoTarinaamme {
-  position: relative;
-  letter-spacing: 0.05em;
-  line-height: 140%;
-  text-transform: uppercase;
-}
 .button {
   position: absolute;
   top: 2732px;
@@ -79,6 +73,10 @@
   height: 6px;
   display: none;
 }
+.inputField {
+  border: none;
+}
+
 .phenvelopeSimpleFillParent {
   width: 396px;
   border-radius: var(--br-5xs);
@@ -120,13 +118,7 @@
   line-height: 150%;
   color: var(--grey);
 }
-.createNewAccount {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 150%;
-  font-weight: 600;
-}
+
 .createNewAccountWrapper {
   width: 151px;
   position: relative;
@@ -143,6 +135,7 @@
   padding: 11px 27px;
   font-size: var(--heading-s-size);
   color: var(--white);
+  border: none;
 }
 .login {
   color: var(--purple);
@@ -206,4 +199,145 @@
   font-size: 14px;
   color: var(--white);
   font-family: var(--font-gotham-bold);
+  padding: 32px;
+}
+@media (max-width: 486px) {
+  .button {
+    display: flex;
+    top: auto;
+    left: auto;
+    position: static;
+    margin: 20px;
+  }
+
+  .solarlinkCircleBoldIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .devlinksIcon {
+    width: 135px;
+    height: 26.3px;
+  }
+
+  .solarlinkCircleBoldParent {
+    width: 182.5px;
+    height: 40px;
+  }
+
+  .createAccount,
+  .letsGetYou {
+    font-size: var(--heading-s-size);
+    color: var(--grey);
+  }
+
+  .createAccountParent {
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .emailAddress {
+    width: 396px;
+    font-size: var(--heading-s-size);
+  }
+
+  .phenvelopeSimpleFillIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .egAlexemailcom {
+    opacity: 0.5;
+  }
+
+  .emailAddressParent,
+  .phenvelopeSimpleFillParent {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .phenvelopeSimpleFillParent {
+    width: 311px;
+    border-radius: var(--br-5xs);
+    background-color: var(--white);
+    border: 1px solid var(--borders);
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-xs) var(--padding-base);
+    gap: var(--gap-xs);
+    font-size: var(--heading-s-size);
+  }
+
+  .emailAddressParent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-9xs);
+  }
+
+  .passwordMustContain {
+    font-size: var(--heading-s-size);
+    color: var(--grey);
+  }
+
+  .createNewAccount {
+    font-weight: 600;
+  }
+
+  .createNewAccountWrapper {
+    width: 151px;
+    height: 24px;
+  }
+
+  .publish {
+    padding: 11px 27px;
+    font-size: var(--heading-s-size);
+  }
+
+  .login {
+    color: var(--purple);
+  }
+
+  .alreadyHaveAnContainer {
+    font-size: var(--heading-s-size);
+    color: var(--grey);
+  }
+
+  .frameGroup {
+    gap: 24px;
+    font-size: var(--body-s-size);
+    width: 311px;
+  }
+
+  .frameParent {
+    width: 311px;
+    gap: 40px;
+  }
+
+  .groupParent,
+  .mobileCreateAccountInner {
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  .groupParent {
+    padding: 32px;
+    gap: 64px;
+  }
+
+  .mobileCreateAccountInner {
+    height: 812px;
+  }
+
+  .mobileCreateAccount {
+    height: 812px;
+    font-size: 24px;
+    color: var(--dark-grey);
+  }
 }

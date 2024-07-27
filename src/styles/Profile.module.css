@@ -470,12 +470,7 @@
   gap: var(--gap-5xl);
   font-size: var(--body-s-size);
 }
-.tutustuKokoTarinaamme {
-  position: relative;
-  letter-spacing: 0.05em;
-  line-height: 140%;
-  text-transform: uppercase;
-}
+
 .button {
   border-radius: 112px;
   background-color: #1c2239;
@@ -501,4 +496,241 @@
   font-size: var(--body-m-size);
   color: var(--white);
   font-family: var(--body-m);
+}
+
+@media (max-width: 486px) {
+  .frameChild {
+    width: 32px;
+    height: 32px;
+  }
+  .devlinksIcon {
+    display: none;
+  }
+  .groupWrapper {
+    width: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .groupParent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+    gap: 8px;
+  }
+  .profileDetails1 {
+    display: none;
+  }
+
+  .linksParent,
+  .publish {
+    align-items: flex-start;
+  }
+
+  .frameParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .addeditremoveLinksBelow,
+  .customizeYourLinks {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+  }
+
+  .addeditremoveLinksBelow {
+    font-size: var(--body-m-size);
+    color: var(--grey);
+  }
+  .profilePicture {
+    text-align: left;
+  }
+  .customizeYourLinksParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .addeditremoveLinksBelow {
+    font-size: 16px;
+  }
+  .customizeYourLinks {
+    font-size: 24px;
+  }
+  .previewLink {
+    font-weight: 600;
+  }
+  .previewContainer {
+    padding: 11px 27px;
+  }
+
+  .linkText,
+  .profileText {
+    display: none;
+  }
+
+  .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  .text {
+    display: none;
+  }
+
+  .previewWrapper {
+    width: 52px;
+    height: 24px;
+    padding: 11px 16px;
+  }
+  .previewSectionWrapper {
+    display: none;
+  }
+
+  .phpreviewBoldIcon {
+    position: relative;
+    left: 18px;
+    top: 1px;
+  }
+
+  .letsGetYou {
+    font-size: 24px;
+  }
+  .useTheAdd {
+    font-size: 16px;
+  }
+  .frameParent3 {
+    padding: 5px;
+    gap: 0;
+  }
+  .publish1 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-2xs) var(--padding-8xl);
+  }
+
+  .egJohnWrapper {
+    width: 225px;
+  }
+  .frameItem {
+    width: 124.8px;
+    height: 80px;
+  }
+
+  .frameDiv {
+    flex: 1;
+    border-radius: var(--br-xs);
+    background-color: var(--light-grey);
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: var(--dark-grey);
+  }
+
+  .publishParent {
+    gap: var(--gap-5xl);
+  }
+
+  .frameContainer {
+    align-self: stretch;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .profilePictureParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+  }
+  .frameParent2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .frameContainer {
+    padding: var(--padding-5xl);
+    gap: 40px;
+  }
+
+  .frameInner {
+    align-self: stretch;
+    background-color: var(--borders);
+  }
+
+  .saveWrapper {
+    width: 311px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .publish2 {
+    border-radius: var(--br-5xs);
+    background-color: var(--purple);
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-2xs) var(--padding-8xl);
+    opacity: 0.25;
+  }
+
+  .publish2,
+  .publishWrapper,
+  .rectangleParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .publishWrapper {
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--padding-base);
+  }
+
+  .frameGroup,
+  .mobileEmptyChild {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .frameGroup {
+    align-self: stretch;
+    width: 343px;
+    border-radius: var(--br-xs);
+    background-color: var(--white);
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .Profile {
+    height: 100%;
+  }
 }

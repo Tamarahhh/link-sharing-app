@@ -13,7 +13,7 @@ const AddedLink: NextPage<{
               <img
                 className={styles.solarlinkCircleBoldIcon}
                 alt=""
-                src="/solarlinkcirclebold.svg"
+                src="/images/solar_link-circle-bold.png"
               />
               <img className={styles.devlinksIcon} alt="" src="/devlinks.svg" />
             </div>
@@ -22,7 +22,7 @@ const AddedLink: NextPage<{
                 <img
                   className={styles.phlinkBoldIcon}
                   alt=""
-                  src="/phlinkbold.svg"
+                  src="/images/ph_link-bold.png"
                 />
                 <div className={styles.links1}>Links</div>
               </div>
@@ -130,7 +130,7 @@ const AddedLink: NextPage<{
                     <img
                       className={styles.teenyiconsgithubSolid}
                       alt=""
-                      src="/phlinkbold1.svg"
+                      src="/ph_link-bold.png"
                     />
                     <a
                       className={styles.httpswwwgithubcomelonmus}
@@ -184,11 +184,6 @@ const AddedLink: NextPage<{
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={styles.button}>
-        <div className={styles.tutustuKokoTarinaamme}>
-          tutustu koko tarinaamme
         </div>
       </div>
     </div>

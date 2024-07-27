@@ -35,7 +35,7 @@ const Profile: NextPage = () => {
                   src="/images/ph_link-bold.png"
                 />
                 <div className={styles.linksLinks} onClick={handleLink}>
-                  Links
+                  <span className={styles.linkText}>Links</span>
                 </div>
               </div>
               <div className={styles.links1}>
@@ -44,13 +44,18 @@ const Profile: NextPage = () => {
                   alt=""
                   src="/images/ph_user-circle-bold.png"
                 />
-                <div className={styles.linksProfile}>Profile Details</div>
+                <div className={styles.profileText}>Profile Details</div>
               </div>
             </div>
             <div className={styles.publish}>
               <div className={styles.previewWrapper}>
                 <div className={styles.previewLink} onClick={handlePreview}>
-                  Preview
+                  <span className={styles.text}>Preview</span>
+                  <img
+                    className={styles.phpreviewBoldIcon}
+                    alt=""
+                    src="/images/ph_eye-bold.png"
+                  />
                 </div>
               </div>
             </div>
@@ -136,7 +141,7 @@ const Profile: NextPage = () => {
                         <img
                           className={styles.phimageIcon}
                           alt=""
-                          src="/phimage.svg"
+                          src="/images/ph_image.png"
                         />
                         <p className={styles.links}>Change Image</p>
                       </div>
@@ -146,7 +151,7 @@ const Profile: NextPage = () => {
                         <img
                           className={styles.phimageIcon}
                           alt=""
-                          src="/phimage1.svg"
+                          src="/images/ph_image.png"
                         />
                         <div className={styles.links}>+ Upload Image</div>
                       </div>

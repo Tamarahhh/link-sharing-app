@@ -23,17 +23,12 @@ const CreateAccount: NextPage = () => {
 
   return (
     <div className={styles.CreateAccount}>
-      <div className={styles.button}>
-        <div className={styles.tutustuKokoTarinaamme}>
-          tutustu koko tarinaamme
-        </div>
-      </div>
       <div className={styles.groupParent}>
         <div className={styles.solarlinkCircleBoldParent}>
           <img
             className={styles.solarlinkCircleBoldIcon}
             alt="Solarlink Circle Bold"
-            src="/images/solarlinkcirclebold.png"
+            src="/images/solar_link-circle-bold.png"
           />
           <img
             className={styles.devlinksIcon}
@@ -68,11 +63,6 @@ const CreateAccount: NextPage = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  <img
-                    className={styles.frameChild}
-                    alt=""
-                    src="/vector-1.svg"
-                  />
                 </div>
               </div>
               <div className={styles.emailAddressParent}>
@@ -83,7 +73,7 @@ const CreateAccount: NextPage = () => {
                   <img
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Lock Icon"
-                    src="/ph_lock-key-fill.svg"
+                    src="/images/ph_lock-key-fill.svg"
                   />
                   <input
                     type="password"
@@ -106,7 +96,7 @@ const CreateAccount: NextPage = () => {
                   <img
                     className={styles.phenvelopeSimpleFillIcon}
                     alt="Lock Icon"
-                    src="/ph_lock-key-fill.svg"
+                    src="/images/ph_lock-key-fill.svg"
                   />
                   <input
                     type="password"
