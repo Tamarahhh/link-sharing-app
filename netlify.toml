@@ -1,6 +1,18 @@
 [build]
   command = "npm install --legacy-peer-deps && npm run build"
-  publish = "out"
+  publish = "build"
 
 [build.environment]
   NODE_VERSION = "18.20.4"
+
+  [context.production]
+  environment = { NODE_ENV = "production" }
+
+[context.deploy-preview]
+  environment = { NODE_ENV = "development" }
+
+[context.branch-deploy]
+  environment = { NODE_ENV = "development" }
+
+[context.dev]
+  environment = { NODE_ENV = "development" }
